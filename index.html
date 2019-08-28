@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<!-- Ensures the browser knows that the language is in english-->
+<html lang="en">
+    <head>
+        <title>Adventure Rafting</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <!-- Links page to the css spreadsheet-->
+        <link rel="stylesheet" href="style.css">
+        <!-- Allows for the use of animations-->
+        <link rel="stylesheet" href="animate.css">
+        <!-- Allows for the use of specific font--> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Allows for the use of icons such as stars-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Adventure Rafting</a></h1>
+            <img class="icon" src="icons/rafting-64px.png" alt="Adventure Rafting Logo">
+            <nav>
+                <ul>
+                    <li><a href="Scenic-Rafting.html">SCENIC TOUR</a></li>
+                    <li><a href="Adrenaline-Rafting.html">ADRENALINE RAFTING</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--id tag Used in order to prevent the repetition of the same css code-->
+        <section class="hero-img" id="front-page" title="Photo of Rafts on calm water">
+            <p class="animated pulse"> scroll down for more</p>
+        </section>
+        
+        <!--Allows all css to be the same for every text block made aslong as it has the class text block-->
+        <section class="text-block">
+            <p>  
+            Welcome to Adventure Rafting, the home of rafting. Adventure Rafting is an international company based in fifty-one unique locations ranging from bottom of the world New Zealand to top of the world Greenland.  We have been operating for over twenty-five years and have been the host to a 100,000 amazing raft trips.
+            </p>
+        </section>
+        
+        
+        <section class="image" id="scenic" title="Photo of Scenic Rafting">
+            <!--Class centered is used in order to bring the text to the middle of the image-->
+            <h2><a class="centered" href="Scenic-Rafting.html">Scenic Rafting</a></h2>
+        </section>
+        
+        <section class="text-block">
+            <p>
+            Mesmerizing safe rafting fun for the whole family. Come join us for tranquil immersion in the many stunning abnormalities of nature. Choose from one of our three unique scenic adventures.  Family Rafting  a 3-5 hour fun scenic trip sightseeing down the innumerable stunning rivers of the world. Exploration Rafting a 4-7 hour adventure down beautiful rivers, with the main focal point being exploring the rare locations that surround the river. Romantic rafting - under the cover of darkness, illuminated by traditional japanese lamps, a perfect unforgettable date, honeymoon or even proposal.
+            </p>
+        </section>
+        
+        <section class="image" id="adrenaline" title="Photo of Adrenaline Rafting">
+            <h2><a class="centered" href="Adrenaline-Rafting.html">Adrenaline Rafting</a></h2>
+        </section>
+        
+        <section class="text-block">
+            <p>
+            Extremely exhilarating, intense rafting fun for ages 16 and up. Come join us for 2-4 hours of blood-pumping action as our experienced guides blast you down the most dangerous of rivers. Choose from grade 3 rapids for intermediate rafting fun, or grade 4 rapids for advanced challenge or, for the inner thrillseeker, grade 5 rapids for the most intense rafting trip of your life.
+            </p>
+        </section>
+        
+        <!-- id tag used so the css does not have to be repeated in order to turn the background a diffrent colour-->
+        <section class="background-title" id="green">
+            <p>Our Staff</p>
+        </section>
+        
+        <!-- Setup for the Our staff row -->
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <!-- Alt text used to appear if the image does not appear or the user is blind and is using a narator-->
+              <img src="staff/l-u-c-r-e-a-t-i-v-e-796921-unsplash.jpg" alt="Luke Creative" style="width:80%">
+              <div class="container">
+                <h2>Luke Creative</h2>
+                <p class="title">CEO &amp; Founder</p>
+                <a href="Contact.html"><p><button class="button">Contact</button></p></a>
+              </div>
+            </div>
+          </div>
+            
+
+          <div class="column">
+            <div class="card">
+              <img src="staff/tobias-a-muller-364979-unsplash.jpg" alt="Tobias Muller" style="width:80%">
+              <div class="container">
+                <h2>Tobias Muller</h2>
+                <p class="title">Deputy Manager</p>
+                <a href="Contact.html"><p><button class="button">Contact</button></p></a>
+              </div>
+            </div>
+          </div>
+              
+          <div class="column">
+            <div class="card">
+              <img src="staff/gregory-hayes-775806-unsplash.jpg" alt="Gregory Hayes" style="width:80%">
+              <div class="container">
+                <h2>Gregory Hayes</h2>
+                <p class="title">Financial Advisor</p>
+                <a href="Contact.html"><p><button class="button">Contact</button></p></a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="staff/cristian-lozan-371397-unsplash.jpg" alt="Cristian Logan" style="width:80%">
+              <div class="container">
+                <h2>Cristian Logan</h2>
+                <p class="title">Saftey Specialist</p>
+                <a href="Contact.html"><p><button class="button">Contact</button></p></a>
+              </div>
+            </div>
+          </div>
+              
+          <div class="column">
+            <div class="card">
+              <img src="staff/mandy-zhang-705363-unsplash.jpg" alt="Mandy Zhang" style="width:80%">
+              <div class="container">
+                <h2>Mandy Zhang</h2>
+                <p class="title">Coordinator</p>
+                <a href="Contact.html"><p><button class="button">Contact</button></p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <footer>
+            <!-- Creates a dropup page for the image sources to provide credit to the creators -->
+            <div class="dropup">
+                <button class="dropbtn">Splash Page Images</button>
+                <div class="dropup-content">
+                    <!-- Target blank so it opens in other pages -->
+                    <a href="https://pixabay.com/en/romania-lake-water-reflections-1894741/" target="_blank">Front Page</a>
+                    <a href="https://pixabay.com/en/yosemite-river-water-california-1590011/" target="_blank">Scenic</a>
+                    <a href="https://unsplash.com/photos/THsw2pd2gX0" target="_blank">Adrenaline</a>
+                    <a href="https://unsplash.com/photos/nAUxY-bSTSg" target="_blank">Luke</a>
+                    <a href="https://unsplash.com/photos/YsRk3iVupto" target="_blank">Tobias</a>
+                    <a href="https://unsplash.com/photos/h5cd51KXmRQ" target="_blank">Gregory</a> 
+                    <a href="https://unsplash.com/photos/EdA845C1yXc" target="_blank">Ctistian</a> 
+                    <a href="https://unsplash.com/photos/a0EQFTH4ZfA" target="_blank">Mandy</a> 
+                </div>
+            </div>
+            
+            <div class="dropup">
+                <button class="dropbtn">Scenic Page Sources</button>
+                <div class="dropup-content">
+                    <a href="https://unsplash.com/photos/JjDqyWuWZyU" target="_blank">Hero img</a>
+                    <a href="https://unsplash.com/photos/TpW39Z5biWU" target="_blank">Family 1</a>
+                    <a href="https://unsplash.com/photos/EqztQX9btrE" target="_blank">Family 2</a>
+                    <a href="https://unsplash.com/photos/282Vo4PUnBA" target="_blank">Family 3</a>
+                    <a href="https://unsplash.com/photos/RErhr8r1q6s" target="_blank">Family 4</a>
+                    <a href="https://unsplash.com/photos/rvyM-jjt0dw" target="_blank">Explore 1</a>
+                    <a href="https://unsplash.com/photos/Nhs6EThGHwo" target="_blank">Explore 2</a>
+                    <a href="https://unsplash.com/photos/imztpH1lSpY" target="_blank">Explore 3</a>
+                    <a href="https://unsplash.com/photos/xjhU-cPOlP0" target="_blank">Explore 4</a>
+                    <a href="https://unsplash.com/photos/Wu3pkvOIMJk" target="_blank">Romantic 1</a>
+                    <a href="https://unsplash.com/photos/-wujI8hrK7M" target="_blank">Romantic 2</a>
+                    <a href="https://unsplash.com/photos/3okHTqD9yUA" target="_blank">Romantic 3</a>
+                    <a href="https://unsplash.com/photos/eYLFB672iTQ" target="_blank">Romantic 4</a>
+                </div>
+            </div>
+            
+            <div class="dropup">
+                <button class="dropbtn">Adrenaline Page Sources</button>
+                <div class="dropup-content">
+                    <a href="https://unsplash.com/photos/UWdgTvf3m8g" target="_blank">Adrenaline</a>
+                    <a href="https://pixabay.com/en/rafting-whitewater-challenge-action-661716/" target="_blank">Grade 3</a>
+                    <a href="https://pixabay.com/en/rafting-whitewater-challenge-action-695318/" target="_blank">Grade 4</a>
+                    <a href="https://pixabay.com/en/grand-canyon-arizona-colorado-river-263773/" target="_blank">Grade 5</a>
+                    <a href="https://en.wikipedia.org/wiki/International_scale_of_river_difficulty" target="_blank">Grading System</a>
+                </div>
+            </div>
+            
+            <div class="dropup">
+                <button class="dropbtn">Icon and Extra Sources</button>
+                <div class="dropup-content">
+                    <a href="http://www.freepik.com" target="_blank">Freepik</a>
+                    <a href="https://www.flaticon.com/" target="_blank">Flaticon.com</a>
+                    <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">License</a>
+                    <a href="https://pixabay.com/en/credit-card-master-card-visa-card-1520400/" target="_blank">Purchase-Page</a>
+                    <a href="https://pixabay.com/en/contact-us-contact-email-phone-2993000/ https://pixabay.com/en/contact-us-contact-email-phone-2993000/" target="_blank">Contact-Page</a>
+                </div>
+            </div>
+            
+            <section class="copy-right">
+                <p>&copy; Adventure Rafting.co All Rights Reserved</p>
+            </section>
+        </footer>
+    </body>
+</html>
+

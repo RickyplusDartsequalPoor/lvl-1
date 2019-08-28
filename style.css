@@ -1,0 +1,402 @@
+/*
+Header colour: #00796B
+Footer colour: #03A9F4 
+Text color: #FFFFFF
+*/
+
+/* Allows percentages to be used later aswell as it changes the text for the whole website */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+header {
+    /* position fixed makes the header follow the user */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #FFFFFF;
+    /* Transparency set to 72% in order to make the text readable as less that 68% is not readable */
+    background-color: rgba(0, 121, 107, 0.72); 
+    /* Used to ensure the header goes over the top of everything */
+    z-index: 1;
+}
+
+img icon {
+    height: 50vh
+}
+
+header h1 a, img {
+    font-size: 200%;
+    float: left;
+    padding: 25px 20px;
+    color: #FFFFFF;
+    /* Removes the text decoration that comes from the text being an a tag */
+    text-decoration: none;
+}
+
+nav li, nav a {
+    display: inline-block;
+}
+
+nav ul{
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 40px 35px;
+    color: #FFFFFF;
+    font-size: 125%;
+}
+
+/* Turns the white text to black when hovered over to indicate it is a link */
+nav a:hover{
+    color: black;
+}
+
+ /* Keeps the image in place creating the hero image affect where the text appears to be moving up the image when scrolled */
+.hero-img {
+    /* 100vh makes the hero image scale with the page */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment:  fixed;
+}
+
+/* id tag Used in order to prevent the repetition of the same css code */
+#front-page {
+    background-image: url(images/romania-1894741_1920.jpg);
+}
+
+#scenic-page {
+    background-image: url(images/ehmir-bautista-364387-unsplash.jpg)
+}
+
+#adrenaine-page {
+    background-image: url(images/julie-thornton-473049-unsplash.jpg)
+}
+
+.hero-img p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFFFFF;
+}
+
+/* Used in order to make every single text block the same */
+/* Used in order to scale to page size */
+.text-block {
+    margin: 50px auto;
+    max-width: 1200px;
+    width: 90%;
+    line-height: 150%;
+    text-align: justify;
+}
+
+/* Used in order to allign the text to the center of the images */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    height: 100vh;
+    margin: 40px 0px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image a {
+    font-size: 250%;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 121, 107, 0.72);
+    padding: 25px 20px;
+}
+
+.image a:hover {
+    color: black;  
+}
+
+#scenic {
+    background-image: url(images/yosemite-1590011_1920.jpg);
+}
+
+#adrenaline {
+    background-image: url(images/firdouss-ross-414673-unsplash.jpg);
+}
+
+.background-title p {
+    font-size: 200%;
+    padding: 13px 10px;
+    color:  white;
+    text-align: center; 
+}
+
+#green {
+    background-color: rgba(0, 121, 107, 0.72);
+}
+
+/* Used in order to style the css for the column that all the staff images are in */
+.column {
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 13px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Increases the box shadow when a user hovers over the card to make it look like the card is poping out */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.30);
+} 
+    
+.container {
+    padding: 0 16px;
+    
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+/* Styles the clickable contact button below  the staff images */
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Styles The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Positioning the dropdown content of the container <div> */
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {background-color: #ddd;}
+
+.dropup:hover .dropup-content {display: block;}
+
+.dropup:hover .dropbtn {background-color: #3e8e41;}
+
+footer {
+    color: white;
+    padding: 25px 20px;
+    background-color: #03A9F4;
+}
+
+/* Styles the copy right infomation next to the dropdowns*/
+.copy-right {
+    padding: 16px;
+    float: right;
+    font-size: 50%;
+}
+
+/* Image type used because the css is alot diffrent than the css for image*/
+.image-type {
+    height: 100vh;
+    margin: 40px 0px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#family {
+    background-image: url(images/lenka-zigon-349734-unsplash.jpg);
+}
+
+.image-type h2 {
+    font-size: 250%;
+    color: white;
+    background-color: rgba(0, 121, 107, 0.72);
+    padding: 25px 20px;
+}
+
+/* Styles the button and places it in the middle of the container/image */
+.image-type .btn {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+  background-color: #E64A19; 
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Makes the button into a square */
+.imagetype .btn {border-radius: 4px;}
+
+.image-type .btn:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Used in order to make the hover box-shadow effect on only the romantic image white so it shows up in the black background */
+#romantic .btn:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(255, 255, 255, 0.23);
+}
+
+#romantic .btn {
+  background-color: red; 
+}
+
+/* Used in order to make the stars that are checked turn orange resulting in family rafting there being 4 orange stars and one white */
+.checked {
+    color: orange;
+}
+
+.icon {
+    float: left;
+}
+
+/* Used in order to make the color of the checked hearts red only for romantic rafting */
+#romantic .checked {
+    color: red;
+}
+
+.img-gallery {
+    width: 90%; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-gallery img{
+    width: 30%;
+    opacity: .9;
+}
+
+/* Used in order to make the image change from .9 opacity to 1 opacity when the user hovers over the image  */
+.img-gallery img:hover {
+    opacity: 1;
+}
+
+#exploration {
+    background-image: url(images/matt-howard-490846-unsplash.jpg);
+}
+
+#romantic {
+    background-image: url(images/leon-contreras-447379-unsplash.jpg);
+}
+
+/* Used in order to make the color of the padding behind the title for romantic rafting red without changing the others */
+#romantic h2 {
+    background-color: rgba(255, 0, 0, 0.72);
+}
+
+#g-three {
+    background-image: url(images/rafting-661716_1920.jpg)  
+}
+
+#g-three h2 {
+    background-color: rgba(255, 255, 0, 0.72);
+}
+
+#g-three .btn {
+  background-color: #FFC107; 
+}
+
+#g-four {
+   background-image: url(images/rafting-695318_1280.jpg)
+}
+
+#g-four h2 {
+    background-color: rgba(255, 165, 0, 0.72);
+}
+
+#g-five {
+    background-image: url(images/grand-canyon-263773_1920.jpg)
+}
+
+#g-five h2 {
+    background-color: rgba(255, 0, 0, 0.72);
+}
+
+#g-five .btn {
+  background-color: red; 
+}
+
+#red {
+    background-color: rgba(255, 0, 0, 0.72);
+}
+
+#purchase-page {
+     background-image: url(images/credit-card-1520400_1920.jpg); 
+}
+
+#contact-page {
+    background-image: url(images/contact-us-2993000_1920.jpg);   
+}
+
+/*Used to make anything affected by the pulse animation to pulse forever*/
+.animated.pulse {
+    animation-iteration-count: infinite;
+}
